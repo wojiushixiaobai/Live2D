@@ -1,123 +1,47 @@
 {
-  "version": "Sample 1.0.0",
-  "model": "model.moc",
-  "textures": [
-    "model.1024/texture_00.png"
-  ],
-  "controllers": {
-    "param_hit": {},
-    "param_loop": {},
-    "key_trigger": {},
-    "param_trigger": {},
-    "area_trigger": {},
-    "hand_trigger": {},
-    "eye_blink": {
-      "min_interval": 500,
-      "max_interval": 6000,
-      "enabled": true
-    },
-    "lip_sync": {
-      "gain": 5.0
-    },
-    "mouse_tracking": {
-      "smooth_time": 0.15,
-      "enabled": true
-    },
-    "auto_breath": {
-      "enabled": true
-    },
-    "extra_motion": {
-      "enabled": true
-    },
-    "accelerometer": {
-      "enabled": true
-    },
-    "microphone": {},
-    "transform": {},
-    "face_tracking": {
-      "enabled": true
-    },
-    "hand_tracking": {},
-    "param_value": {},
-    "part_opacity": {},
-    "artmesh_opacity": {
-      "items": [
-        {
-          "name": "隐藏武器",
-          "ids": [
-            "ArtMesh20",
-            "ArtMesh19"
-          ],
-          "hidden": true
+	"version":"Sample 1.0.0",
+	"model":"model.moc",
+	"textures":[
+		"model.1024/texture_00.png"
+	],
+    "controllers": {
+        "artmesh_opacity": {
+            "items": [
+                {
+                    "name": "隐藏武器",
+                    "ids": [
+                        "ArtMesh20",
+                        "ArtMesh19"
+                    ],
+                    "hidden": true
+                }
+            ],
+            "enabled": true
         }
-      ],
-      "enabled": true
     },
-    "artmesh_color": {},
-    "artmesh_culling": {
-      "default_mode": 0
-    },
-    "intimacy_system": {}
-  },
-  "hit_areas": [
-    {
-      "name": "head",
-      "id": "D_REF.HEAD"
-    },
-    {
-      "name": "body",
-      "id": "D_REF.BODY"
-    },
-    {
-      "name": "hand",
-      "id": "D_REF.HAND"
-    }
-  ],
-  "motions": {
-    "idle": [
-      {
-        "file": "motions/daiji_idle_01.mtn"
-      }
-    ],
-    "": [
-      {
-        "file": "motions/login.mtn"
-      },
-      {
-        "file": "motions/shake.mtn"
-      },
-      {
-        "file": "motions/touch_1.mtn"
-      },
-      {
-        "file": "motions/touch_2.mtn"
-      },
-      {
-        "file": "motions/touch_3.mtn"
-      },
-      {
-        "file": "motions/touch_4.mtn"
-      },
-      {
-        "file": "motions/touch_5.mtn"
-      },
-      {
-        "file": "motions/wait_1.mtn"
-      },
-      {
-        "file": "motions/wait_2.mtn"
-      },
-      {
-        "file": "motions/wedding.mtn"
-      },
-      {
-        "file": "motions/wedding_touch.mtn"
-      }
-    ]
-  },
-  "physics": "physics.json",
-  "physics_v2": {
-    "file": "physics.json"
-  },
-  "options": {}
+	"motions":{
+		"idle":[
+			{"file":"motions/daiji_idle_01.mtn"}
+		],
+		"":[
+			{"file":"motions/login.mtn"},
+			{"file":"motions/shake.mtn"},
+			{"file":"motions/touch_1.mtn"},
+			{"file":"motions/touch_2.mtn"},
+			{"file":"motions/touch_3.mtn"},
+			{"file":"motions/touch_4.mtn"},
+			{"file":"motions/touch_5.mtn"},
+			{"file":"motions/wait_1.mtn"},
+			{"file":"motions/wait_2.mtn"},
+			{"file":"motions/wedding.mtn"},
+			{"file":"motions/wedding_touch.mtn"}
+		]
+	},
+	"physics":"physics.json",
+
+	"hit_areas":[
+			{"name":"head","id":"D_REF_HEAD"},
+			{"name":"body","id":"D_REF_BODY"},
+			{"name":"hand","id":"D_REF_HAND"}
+			]
 }
